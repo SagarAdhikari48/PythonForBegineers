@@ -23,3 +23,6 @@ a=None
 print(type(age))
 print(type(old))
 print(type(a))
+
+# Python is a case sensitive language
+ 
