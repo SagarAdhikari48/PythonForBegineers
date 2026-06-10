@@ -26,3 +26,9 @@ print(type(a))
 
 # Python is a case sensitive language
  
+
+ #Print sum 
+ 
+a = 2
+b = 3
+print(a+b)
