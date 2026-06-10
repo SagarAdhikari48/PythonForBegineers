@@ -10,3 +10,8 @@ print(name)
 print("my name is  :", name)
 print("my name is  : " ,age)
 print("my name is  : " ,age2)
+
+
+print(type(name))
+print(type(age))
+print(type(price))
