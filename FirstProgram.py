@@ -57,5 +57,5 @@
 
 #WAP to input side of a square and print its area
 side = float(input("Enter side of square : "))
-area = side * side
+area = side ** 2
 print("Area of square : ", area)
