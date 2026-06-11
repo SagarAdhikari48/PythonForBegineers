@@ -39,10 +39,18 @@
 # print("You entered : ", value)
 # print(type(value), value)
 
-name = input("Enter your name : ")
-age = int(input("Enter your age : "))
-marks = float(input("Enter your marks : "))
+# name = input("Enter your name : ")
+# age = int(input("Enter your age : "))
+# marks = float(input("Enter your marks : "))
 
-print("Name : ", name)
-print("Age : ", age)
-print("Marks : ", marks)
+# print("Name : ", name)
+# print("Age : ", age)
+# print("Marks : ", marks)
+
+
+# Write a program to input 2 numbers and print their sum 
+
+number1 = int (input("Enter first number : "))
+number2 = int (input("Enter second number : "))
+sum = number1 + number2
+print("Sum : ", sum)
