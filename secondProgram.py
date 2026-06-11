@@ -36,11 +36,25 @@ string = "I am sagar adhikari with seven year of experience in the field of soft
 
 # Conditionals statements
 
-age = int(21)
-if(age >= 18):
-    print("Can vote and can drive")
+# age = int(21)
+# if(age >= 18):
+#     print("Can vote and can drive")
 
-elif(age <= 18):
-    print("You cannot drive and Vote")
-else :
-    print("Nothing")
+# elif(age <= 18):
+#     print("You cannot drive and Vote")
+# else :
+#     print("Nothing")
+
+
+marks = int(input("Enter the marks obtained : "))
+
+if marks >= 90:
+    grade = "A"
+elif marks >= 80:
+    grade = "B"
+elif marks >= 70:
+    grade = "C"
+else:
+    grade = "D"
+
+print("grade of the Student : ", grade)
