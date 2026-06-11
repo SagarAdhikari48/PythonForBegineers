@@ -2,34 +2,39 @@
 # print(23+5)
 
 
-name = "sagar"
-age = 32
-age2 = age
-price = 23.5
-print(name)
-print("my name is  :", name)
-print("my name is  : " ,age)
-print("my name is  : " ,age2)
+# name = "sagar"
+# age = 32
+# age2 = age
+# price = 23.5
+# print(name)
+# print("my name is  :", name)
+# print("my name is  : " ,age)
+# print("my name is  : " ,age2)
 
 
-print(type(name))
-print(type(age))
-print(type(price))
+# print(type(name))
+# print(type(age))
+# print(type(price))
 
 
-age =23
-old = False
-a=None
-print(type(age))
-print(type(old))
-print(type(a))
+# age =23
+# old = False
+# a=None
+# print(type(age))
+# print(type(old))
+# print(type(a))
 
-# Python is a case sensitive language
- 
+# # Python is a case sensitive language
 
- #Print sum 
- 
-a = 2
-b = 3
-sum = a + b
-print(sum)
+
+#  #Print sum
+
+# a = 2
+# b = 3
+# sum = a + b
+# print(sum)
+
+
+value = input("Enter some Value : ")
+print("You entered : ", value)
+print(type(value), value)
