@@ -27,6 +27,6 @@
 #- immutable that cannot be change/update as list
 # -tuple are written inside parenthesis
 
-tup = (2, 1, 3, 1)
-print(type(tup))
-print(tup[2])
+# tup = (2, 1, 3, 1)
+# print(type(tup))
+# print(tup[2])
