@@ -8,3 +8,4 @@ info = {
 }
 
 print(info)
+print(info["name"])
