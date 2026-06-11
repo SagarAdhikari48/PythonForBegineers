@@ -61,8 +61,13 @@
 # print("Area of square : ", area)
 
 # Avarage of two numbers
-a = float(input("Enter the first number :"))
-b = float(input("Enter the second number : "))
+# a = float(input("Enter the first number :"))
+# b = float(input("Enter the second number : "))
 
-average = (a + b) / 2
-print("Average : ", average)
+# average = (a + b) / 2
+# print("Average : ", average)
+
+# WAP to input 2 int numbers a and b .Print True if a is grater than or equals to b. If not print False.
+a = int(input("Enter first number : "))
+b = int(input("Enter the secoond Number : "))
+print(a >= b)
