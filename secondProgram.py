@@ -27,8 +27,20 @@ string = "I am sagar adhikari with seven year of experience in the field of soft
 # print(string[: 5])
 
 # print(string[-4: -1]) #kar
-print(string.endswith("development!"))
-print(string.capitalize())
-print(string.replace("seven", "7"))
-print(string.find("o"))
-print(string.count("o"));
+# print(string.endswith("development!"))
+# print(string.capitalize())
+# print(string.replace("seven", "7"))
+# print(string.find("o"))
+# print(string.count("o"));
+
+
+# Conditionals statements
+
+age = int(21)
+if(age >= 18):
+    print("Can vote and can drive")
+
+elif(age <= 18):
+    print("You cannot drive and Vote")
+else :
+    print("Nothing")
