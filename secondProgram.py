@@ -4,5 +4,5 @@
 
 
 # Escape Sequences
-str1 = "This is a string.\n We are creating string in python programming!"
+str1 = "This is a string.\tWe are creating string in python programming!"
 print(str1)
