@@ -20,10 +20,15 @@
 
 # Slicing is accessing parts of a string
 
-string = "Sagar Adhikari"
+string = "I am sagar adhikari with seven year of experience in the field of software development!"
 # stringSliced = string[1:4]  # 1,2,3
 # print(stringSliced)
 # print(string[5 :])
 # print(string[: 5])
 
-print(string[-4: -1]) #kar
+# print(string[-4: -1]) #kar
+print(string.endswith("development!"))
+print(string.capitalize())
+print(string.replace("seven", "7"))
+print(string.find("o"))
+print(string.count("o"));
