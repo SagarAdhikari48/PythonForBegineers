@@ -3,6 +3,11 @@
 # str3 = "this is a string"
 
 
-# Escape Sequences
-str1 = "This is a string.\tWe are creating string in python programming!"
-print(str1)
+# # Escape Sequences
+# str1 = "This is a string.\tWe are creating string in python programming!"
+# print(str1)
+
+
+string1 = "Sagar"
+string2 = "Adhikari"
+print(string1 + " " + string2)
