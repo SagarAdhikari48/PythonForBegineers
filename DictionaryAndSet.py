@@ -9,3 +9,7 @@ info = {
 
 print(info)
 print(info["name"])
+
+info["name"] = "Adhikari Sagar"
+print(info)
+
