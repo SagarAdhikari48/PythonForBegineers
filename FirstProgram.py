@@ -35,6 +35,14 @@
 # print(sum)
 
 
-value = int(input("Enter some Value : "))
-print("You entered : ", value)
-print(type(value), value)
+# value = int(input("Enter some Value : "))
+# print("You entered : ", value)
+# print(type(value), value)
+
+name = input("Enter your name : ")
+age = int(input("Enter your age : "))
+marks = float(input("Enter your marks : "))
+
+print("Name : ", name)
+print("Age : ", age)
+print("Marks : ", marks)
