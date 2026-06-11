@@ -34,13 +34,20 @@
 
 # Check pallindrome [1,2,3,2,1] = [1,2,3,2,1]
 
-list1 = ["a", "b", "c", "d"]
-list2 = [1, 2, 3, 4]
+# list1 = ["a", "b", "c", "d"]
+# list2 = [1, 2, 3, 4]
 
-copy_list = list1.copy()
-copy_list.reverse()
+# copy_list = list1.copy()
+# copy_list.reverse()
 
-if(copy_list == list1):
-    print("Pallindrome")
-else: 
-    print("Not Pallindrome")
+# if(copy_list == list1):
+#     print("Pallindrome")
+# else: 
+#     print("Not Pallindrome")
+
+
+# tuple to count grade A
+
+grades = ("A", "B", "A", "C", "A", "B")
+print(grades.count("A"))
+
