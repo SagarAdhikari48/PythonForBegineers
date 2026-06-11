@@ -35,6 +35,6 @@
 # print(sum)
 
 
-value = input("Enter some Value : ")
+value = int(input("Enter some Value : "))
 print("You entered : ", value)
 print(type(value), value)
