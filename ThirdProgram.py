@@ -1,4 +1,4 @@
-# Lists and Tuples in python 
+# Lists and Tuples in python
 
 # slicing list
 
@@ -23,10 +23,24 @@
 # print(list)
 
 
-#Tuples in python programming
-#- immutable that cannot be change/update as list
+# Tuples in python programming
+# - immutable that cannot be change/update as list
 # -tuple are written inside parenthesis
 
 # tup = (2, 1, 3, 1)
 # print(type(tup))
 # print(tup[2])
+
+
+# Check pallindrome [1,2,3,2,1] = [1,2,3,2,1]
+
+list1 = ["a", "b", "c", "d"]
+list2 = [1, 2, 3, 4]
+
+copy_list = list1.copy()
+copy_list.reverse()
+
+if(copy_list == list1):
+    print("Pallindrome")
+else: 
+    print("Not Pallindrome")
