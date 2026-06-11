@@ -11,5 +11,6 @@ print(info)
 print(info["name"])
 
 info["name"] = "Adhikari Sagar"
+info["newKey"] = "New Value"
 print(info)
 
