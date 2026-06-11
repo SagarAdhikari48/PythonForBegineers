@@ -21,7 +21,9 @@
 # Slicing is accessing parts of a string
 
 string = "Sagar Adhikari"
-stringSliced = string[1:4]  # 1,2,3
-print(stringSliced)
-print(string[5 :])
-print(string[: 5])
+# stringSliced = string[1:4]  # 1,2,3
+# print(stringSliced)
+# print(string[5 :])
+# print(string[: 5])
+
+print(string[-4: -1]) #kar
