@@ -20,7 +20,7 @@
 
 # Slicing is accessing parts of a string
 
-string = "I am sagar adhikari with seven year of experience in the field of software development!"
+# string = "I am sagar adhikari with seven year of experience in the field of software development!"
 # stringSliced = string[1:4]  # 1,2,3
 # print(stringSliced)
 # print(string[5 :])
@@ -46,15 +46,30 @@ string = "I am sagar adhikari with seven year of experience in the field of soft
 #     print("Nothing")
 
 
-marks = int(input("Enter the marks obtained : "))
+# marks = int(input("Enter the marks obtained : "))
 
-if marks >= 90:
-    grade = "A"
-elif marks >= 80:
-    grade = "B"
-elif marks >= 70:
-    grade = "C"
+# if marks >= 90:
+#     grade = "A"
+# elif marks >= 80:
+#     grade = "B"
+# elif marks >= 70:
+#     grade = "C"
+# else:
+#     grade = "D"
+
+# print("grade of the Student : ", grade)
+
+
+
+# Nesting loop in 
+age = int(input("enter the age : ")) 
+
+if(age >= 18) :
+    if(age >= 80):
+        print("you cannot drive")
+    else:
+        print("you can drive")
 else:
-    grade = "D"
-
-print("grade of the Student : ", grade)
+    print("You cannot drive")
+    
+print("LOL")
