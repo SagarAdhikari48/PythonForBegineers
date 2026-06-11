@@ -8,11 +8,18 @@
 # print(str1)
 
 
-string1 = "Sagar"
+# string1 = "Sagar"
 # string2 = "Adhikari"
 # print(string1 + " " + string2)
 
 # print(len(string1))
 
-ch = string1[0]
-print(ch)
+# ch = string1[0]
+# print(ch)
+
+
+# Slicing is accessing parts of a string
+
+string = "Sagar Adhikari"
+stringSliced = string[1:4]  # 1,2,3
+print(stringSliced)
