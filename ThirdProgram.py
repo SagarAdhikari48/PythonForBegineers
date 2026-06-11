@@ -48,6 +48,12 @@
 
 # tuple to count grade A
 
-grades = ("A", "B", "A", "C", "A", "B")
-print(grades.count("A"))
+# grades = ("A", "B", "A", "C", "A", "B")
+# print(grades.count("A"))
 
+#Store above tuple character in list and sort them in A to D order
+
+grades = ["A", "B", "A", "C", "A", "B"]
+grades.sort()
+
+print(grades)
