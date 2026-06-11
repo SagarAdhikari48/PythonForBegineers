@@ -9,5 +9,7 @@
 
 
 string1 = "Sagar"
-string2 = "Adhikari"
-print(string1 + " " + string2)
+# string2 = "Adhikari"
+# print(string1 + " " + string2)
+
+print(len(string1))
