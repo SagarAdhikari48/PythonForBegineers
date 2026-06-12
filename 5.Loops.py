@@ -91,11 +91,14 @@ print("Question 5 tuples length: ",len(nums))
 search = int(input("Enter the number you want to find : "))
 while i < len(nums) :
     if(search == nums[i]):
-        print("Searched number is found as : ", nums[i])
+        print("Searched number is found as at index  : ", nums[i],"at index", i)
+        break
     else:
         print("Finding...")
         
     i += 1
+    
+print("End!")
     
 ### BREAK AND CONTINUE 
 #Break - Used to terminate the loop when encountered.
