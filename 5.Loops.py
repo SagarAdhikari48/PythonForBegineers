@@ -214,6 +214,19 @@
 ## range(start?, stop, step?)
 
 
-seq = range(5)
-for el in seq:
-    print(el)
+# seq = range(5)
+# for el in seq:
+#     print(el)
+
+
+# for i in range(10): # range(stop condition)
+#     print(i)
+    
+    
+
+# for i in range(2,10): #range (start, stop)
+#     print(i)
+    
+
+# for i in range(2,10,2): #range (start, stop, step)
+#     print(i)
