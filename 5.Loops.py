@@ -194,15 +194,26 @@
 
 ### 2. Search for a number X in this tuple using for loop
 
-numberToSearch = int(input("Enter the number to be searched!"))
-tup = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 9, 16, 49, 81, 25)
-idx = 0
-for num in tup:
-    if num == numberToSearch:
-        print("the searched number is ", num, "at index ", idx)
-        # break
-    idx += 1
-        
+# numberToSearch = int(input("Enter the number to be searched!"))
+# tup = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 9, 16, 49, 81, 25)
+# idx = 0
+# for num in tup:
+#     if num == numberToSearch:
+#         print("the searched number is ", num, "at index ", idx)
+#         # break
+#     idx += 1
 
-else:
-    print("EOF")
+
+# else:
+#     print("EOF")
+
+
+### Range Function -
+# return the sequence of numbers always starting from 0 by default and increments by 1 default
+# and stop before a specified number.
+## range(start?, stop, step?)
+
+
+seq = range(5)
+for el in seq:
+    print(el)
