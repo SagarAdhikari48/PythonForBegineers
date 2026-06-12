@@ -246,11 +246,20 @@
 # number = int(input("enter the number"))
 # for i in range( 1, 11):
 #     print(number * i)
-    
-    
-    
+
+
 ### Pass Statement -> Pass statement is a null statement that does nothing . It is used as a placeholder for future code.
 
-for i in range(5): 
-    pass #not weiting code here now but in future we might add
+for i in range(5):
+    pass  # not weiting code here now but in future we might add
 print("somethind is done")
+
+
+# Practice Questions:
+# 1. Write the program to add sum of n natural number
+n = int(input("enter the number to sum"))
+sum = 0
+for i in range(1, n + 1):
+    sum += i
+    
+print(sum)
