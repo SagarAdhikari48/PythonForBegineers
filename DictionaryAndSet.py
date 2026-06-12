@@ -131,3 +131,13 @@ print("Union Method : ", set1.union(set2))
 set1 = {1, 2, 3}
 set2 = {2,3,4}
 print("Intersection Method : ", set1.intersection(set2))
+
+
+### Challenge -1 -> Store following word meanings in a python dictionary
+    # table :"a piece of furniture" , "list of facts and figures"
+    # cat: "a small animal"
+    
+dict = {
+    "table": ["a piece of furniture", "list of facts and figures"],
+    "cat":"a small animal"
+}
