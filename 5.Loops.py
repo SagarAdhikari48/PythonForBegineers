@@ -45,4 +45,11 @@ while i <= 100 :
     print(i)
     i += 1
 print("Printed from 1 to 100")
+
+### 2. print numbers from 100 to 1
+i = 100
+while i >= 1 :
+    print(i)
+    i -= 1
+print("Printed from 100 to 1")
  
