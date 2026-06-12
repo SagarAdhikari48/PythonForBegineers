@@ -171,14 +171,33 @@ print("dictionary problem:", marks)
 
 marksObtained = {}
 
-x = int(input("Enter phy : "))
-marksObtained.update({"phy": x})
+# x = int(input("Enter phy : "))
+# marksObtained.update({"phy": x})
 
-y = int(input("Enter math : "))
-marksObtained.update({"math": y})
+# y = int(input("Enter math : "))
+# marksObtained.update({"math": y})
 
-z = int(input("Enter che : "))
-marksObtained.update({"che": z})
+# z = int(input("Enter che : "))
+# marksObtained.update({"che": z})
 
-print(marksObtained)
+# print(marksObtained)
 
+
+
+###4. Figure out a way to store 9 & 9.0 as a separate value in the set (You can take help of built-in data types)
+# without external datatypes
+values = {9, 9.0}
+print(values) # output {9}
+
+values = {9, "9.0"}
+print(values) # output {9, '9.0'} -> possible one solution in the form string 
+
+
+#Built in datatypes
+
+values = {
+    ("float", 9.0),# create pairs in the form of tuples here dictionary cannot be done because they are mutable and cannot added to sets
+    ("int", 9)
+}
+
+print("Built in datatypes:",values)
