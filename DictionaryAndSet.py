@@ -109,4 +109,20 @@ setCollection.add((1,2,3,4))
 print("Set collection : ",setCollection)
 
 
-# Clear Method
+## Clear Method - Completely empty our sets
+collection = {1, 2, 2, 3,4, "hello", "world" ,"world",5} 
+print("collection: ",collection)
+print("Clear Collection: ",collection.clear())
+
+# Pop Method - pops any random items from sets
+pop_collection = {1, 2, 2, 3,4, "hello", "world" ,"world",5} 
+print("Pop methods 1 : ",pop_collection.pop())
+print("Pop methods second pop item : ",pop_collection.pop())
+
+## Union Method 
+
+
+
+
+
+## Intersection Method
