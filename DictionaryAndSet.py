@@ -141,3 +141,16 @@ dict = {
     "table": ["a piece of furniture", "list of facts and figures"],
     "cat":"a small animal"
 }
+
+### You are given list of Subjects for students. Assume one classromm is required for 1 subject. How many classrooms are needed by all students.
+### "python","java", "C++","python", "javascript",
+### "java","python", "java","C++", "C",
+
+subjects = {
+    "python","java", "C++","python", "javascript",
+    "java","python", "java","C++", "C",
+}
+
+print(type(subjects))
+print("subjects: " , subjects)
+print(len(subjects)) #Thus answer will be - 5
