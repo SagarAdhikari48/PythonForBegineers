@@ -67,7 +67,7 @@ print("Update student : ",student)
 
 
 
-## Set in Python
+## Set in Python. -> Sets are mutable but elements inside it are immutable
     # Set is the collection of the unordered - no indexed items
     # Each elements in the sets must be unique -(we will not set number ,value,string twice) and immutable- (menas we can store numbers,integer and floats)
 ##BUt we cannot store list and dictionary in a set because they are mutable(means we can change list and dictionary as we already did above using different methods)
@@ -86,3 +86,27 @@ print(type(collection))
 
 collection = set() # Empty Sets
 print(type(collection))
+
+## MEthods in sets
+# Sets are mutable
+# Elements in sets are not immutable
+
+
+setCollection = set()
+
+setCollection.add(1)
+setCollection.add(2)
+setCollection.add(3)
+setCollection.add(2) #Duplication are removed!
+setCollection.add(4)
+setCollection.add("Sagar Adhikari")
+setCollection.add("Married")
+setCollection.add("Amrita Gautam")
+setCollection.add((1,2,3,4))
+# setCollection.add([1,2,3,4]) #Error - TypeError: cannot use 'list' as a set element (unhashable type: 'list')- since list are mutable and the hash value will be different upon the list value changed 
+
+
+print("Set collection : ",setCollection)
+
+
+# Clear Method
