@@ -119,10 +119,15 @@ pop_collection = {1, 2, 2, 3,4, "hello", "world" ,"world",5}
 print("Pop methods 1 : ",pop_collection.pop())
 print("Pop methods second pop item : ",pop_collection.pop())
 
-## Union Method 
+## Union Method -> Combines bot set values and return new
+
+set1 = {1, 2, 3}
+set2 = {2,3,4}
+print("Union Method : ", set1.union(set2))
 
 
 
-
-
-## Intersection Method
+## Intersection Method -> Combines common values and return new
+set1 = {1, 2, 3}
+set2 = {2,3,4}
+print("Intersection Method : ", set1.intersection(set2))
