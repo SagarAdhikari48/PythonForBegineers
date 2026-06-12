@@ -161,6 +161,13 @@
         #     print(num)
 
 
-veggies = ["potato", "onion", "cabbage", "brinjal", "ladyfinger"]
-for veg in veggies : 
-    print(veg)
+        # veggies = ["potato", "onion", "cabbage", "brinjal", "ladyfinger"]
+        # for veg in veggies : 
+        #     print(veg)
+        
+        
+### For loops in Tuples
+
+        # tup = (1, 2, 3, 4, 5, 2, 8, 9)
+        # for val in tup:
+        #     print(val)
