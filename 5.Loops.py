@@ -52,4 +52,13 @@ while i >= 1 :
     print(i)
     i -= 1
 print("Printed from 100 to 1")
+
+### Print the multiplication of table of number n.
+
+factor = 1
+number = int(input("enter the number"))
+while factor <= 10:
+    mul = number * factor
+    factor += 1
+    print("the multiplication is ", mul)
  
