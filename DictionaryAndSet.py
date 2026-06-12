@@ -133,7 +133,7 @@ set2 = {2,3,4}
 print("Intersection Method : ", set1.intersection(set2))
 
 
-### Challenge -1 -> Store following word meanings in a python dictionary
+###1. Challenge -1 -> Store following word meanings in a python dictionary
     # table :"a piece of furniture" , "list of facts and figures"
     # cat: "a small animal"
     
@@ -142,7 +142,7 @@ dict = {
     "cat":"a small animal"
 }
 
-### You are given list of Subjects for students. Assume one classromm is required for 1 subject. How many classrooms are needed by all students.
+###2. You are given list of Subjects for students. Assume one classromm is required for 1 subject. How many classrooms are needed by all students.
 ### "python","java", "C++","python", "javascript",
 ### "java","python", "java","C++", "C",
 
@@ -154,3 +154,31 @@ subjects = {
 print(type(subjects))
 print("subjects: " , subjects)
 print(len(subjects)) #Thus answer will be - 5
+
+
+###3. WAP to enter marks of 3 subjects from the user and store them in a dictionary. Start with an empty dictionary and add one by one . Use subject name as key and marks as value
+
+
+marks = {}
+marks["physics"] = 50
+marks["Math"] = 60
+marks["Che"] = 70
+
+print("dictionary problem:", marks)
+
+
+#OR
+
+marksObtained = {}
+
+x = int(input("Enter phy : "))
+marksObtained.update({"phy": x})
+
+y = int(input("Enter math : "))
+marksObtained.update({"math": y})
+
+z = int(input("Enter che : "))
+marksObtained.update({"che": z})
+
+print(marksObtained)
+
