@@ -120,79 +120,89 @@
 # - Used to skip the current iteration and move to next one.
 # - Terminates execution in the current iteration and continues execution of the loop with the next iteration
 
-        # i = 0
-        # while i <= 5:
-        #     if i == 3:
-        #         i += 1
-        #         continue  # skip 3
-        #     print(i)
-        #     i += 1
+# i = 0
+# while i <= 5:
+#     if i == 3:
+#         i += 1
+#         continue  # skip 3
+#     print(i)
+#     i += 1
 
 # print odd number between 1 - 10
 
-        # i = 1
-        # while i <= 10:
-        #     if i % 2 == 0: #skips the even number i.e number divided by 2 will be skipped 
-        #         i += 1
-        #         continue
-        #     print(i)
-        #     i += 1
-    
-    
+# i = 1
+# while i <= 10:
+#     if i % 2 == 0: #skips the even number i.e number divided by 2 will be skipped
+#         i += 1
+#         continue
+#     print(i)
+#     i += 1
+
+
 # print even number between 1 - 10
 
-        # i = 1
-        # while i <= 10:
-        #     if(i % 2 != 0) : #skips the odd number i.e number divided by 2 will be skipped 
-        #         i += 1
-        #         continue
-        #     print(i)
-        #     i += 1
-        
-        
-        
-        
-        
-        
+# i = 1
+# while i <= 10:
+#     if(i % 2 != 0) : #skips the odd number i.e number divided by 2 will be skipped
+#         i += 1
+#         continue
+#     print(i)
+#     i += 1
+
+
 ### FOR LOOPS - For loops are used for the sequential traversal. For traversing list, string, tuples etc
-        # list = [1, 4, 9, 16, 25, 36,49,64,81,100]
+# list = [1, 4, 9, 16, 25, 36,49,64,81,100]
 
-        # for num in list:
-        #     print(num)
+# for num in list:
+#     print(num)
 
 
-        # veggies = ["potato", "onion", "cabbage", "brinjal", "ladyfinger"]
-        # for veg in veggies : 
-        #     print(veg)
-        
-        
+# veggies = ["potato", "onion", "cabbage", "brinjal", "ladyfinger"]
+# for veg in veggies :
+#     print(veg)
+
+
 ### For loops in Tuples
 
-        # tup = (1, 2, 3, 4, 5, 2, 8, 9)
-        # for val in tup:
-        #     print(val)
-        
-        
+# tup = (1, 2, 3, 4, 5, 2, 8, 9)
+# for val in tup:
+#     print(val)
+
+
 ### FOr loop in strings
-        # str = "My name is sagar"
-        # for ch in str:
-        #     print(ch)
+# str = "My name is sagar"
+# for ch in str:
+#     print(ch)
+
+
+### Else case in for loop - when ever we break the statement we need else case
+
+# string = "Sagaradhikari"
+# for ch in string:
+#     if(ch == "d"):
+#         print("character d is found!")
+#         break
+#     print(ch)
+# else:
+#     print("End")
+
+
+### 1. Print the elements of the following list using a for loop
+# nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# for num in nums:
+#     print(num)
+
+### 2. Search for a number X in this tuple using for loop
+
+numberToSearch = int(input("Enter the number to be searched!"))
+tup = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 9, 16, 49, 81, 25)
+idx = 0
+for num in tup:
+    if num == numberToSearch:
+        print("the searched number is ", num, "at index ", idx)
+        # break
+    idx += 1
         
 
-### Else case in for loop - when ever we break the statement we need else case 
-
-        # string = "Sagaradhikari"
-        # for ch in string:
-        #     if(ch == "d"):
-        #         print("character d is found!")
-        #         break
-        #     print(ch)
-        # else:
-        #     print("End")
- 
- 
- ### 1. Print the elements of the following list using a for loop
-nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
-for num in nums: 
-    print(num)
-
+else:
+    print("EOF")
