@@ -252,5 +252,5 @@
 ### Pass Statement -> Pass statement is a null statement that does nothing . It is used as a placeholder for future code.
 
 for i in range(5): 
-    pass
+    pass #not weiting code here now but in future we might add
 print("somethind is done")
