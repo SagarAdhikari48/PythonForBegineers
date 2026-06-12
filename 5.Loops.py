@@ -230,3 +230,11 @@
 
 # for i in range(2,10,2): #range (start, stop, step)
 #     print(i)
+
+
+
+
+
+###1. print all even number
+for i in range(2, 100, 2):
+    print(i)
