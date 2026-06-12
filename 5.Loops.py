@@ -141,10 +141,26 @@
     
 # print even number between 1 - 10
 
-i = 1
-while i <= 10:
-    if(i % 2 != 0) : #skips the odd number i.e number divided by 2 will be skipped 
-        i += 1
-        continue
-    print(i)
-    i += 1
+        # i = 1
+        # while i <= 10:
+        #     if(i % 2 != 0) : #skips the odd number i.e number divided by 2 will be skipped 
+        #         i += 1
+        #         continue
+        #     print(i)
+        #     i += 1
+        
+        
+        
+        
+        
+        
+### FOR LOOPS - For loops are used for the sequential traversal. For traversing list, string, tuples etc
+        # list = [1, 4, 9, 16, 25, 36,49,64,81,100]
+
+        # for num in list:
+        #     print(num)
+
+
+veggies = ["potato", "onion", "cabbage", "brinjal", "ladyfinger"]
+for veg in veggies : 
+    print(veg)
