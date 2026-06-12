@@ -72,7 +72,17 @@ print("Update student : ",student)
     # Each elements in the sets must be unique -(we will not set number ,value,string twice) and immutable- (menas we can store numbers,integer and floats)
 ##BUt we cannot store list and dictionary in a set because they are mutable(means we can change list and dictionary as we already did above using different methods)
 
-collection = {1, 2, 2, 3,4, "hello", "world" ,"world"} # We can also store string values within set and aslo duplicate value in a set but the set ignore the duplication.
+collection = {1, 2, 2, 3,4, "hello", "world" ,"world",5} # We can also store string values within set and aslo duplicate value in a set but the set ignore the duplication.
 
 print(collection)
-print(type(collection))    
+print(type(collection))  
+print("length: ",len(collection))    
+    #The output of the set will output randomly - {1, 2, 3, 4, 5, 'hello', 'world'} - but removes duplicates
+
+
+## Empty Sets
+collection = {} # Empty Dictionary
+print(type(collection))
+
+collection = set() # Empty Sets
+print(type(collection))
