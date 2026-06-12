@@ -120,19 +120,30 @@
 # - Used to skip the current iteration and move to next one.
 # - Terminates execution in the current iteration and continues execution of the loop with the next iteration
 
-i = 0
-while i <= 5:
-    if i == 3:
-        i += 1
-        continue  # skip 3
-    print(i)
-    i += 1
+        # i = 0
+        # while i <= 5:
+        #     if i == 3:
+        #         i += 1
+        #         continue  # skip 3
+        #     print(i)
+        #     i += 1
 
 # print odd number between 1 - 10
 
-i = 0
+        # i = 1
+        # while i <= 10:
+        #     if i % 2 == 0: #skips the even number i.e number divided by 2 will be skipped 
+        #         i += 1
+        #         continue
+        #     print(i)
+        #     i += 1
+    
+    
+# print even number between 1 - 10
+
+i = 1
 while i <= 10:
-    if i % 2 == 0: #skips the even number i.e number divided by 2 will be skipped 
+    if(i % 2 != 0) : #skips the odd number i.e number divided by 2 will be skipped 
         i += 1
         continue
     print(i)
