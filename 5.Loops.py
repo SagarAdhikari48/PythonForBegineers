@@ -237,12 +237,20 @@
 
 
 # 1.Print number 1 to 100 using for and range method
-for i in range(1, 101):
-    print(i)
-# 2.Print number 100 to 1 using for and range method
-for i in range(100, 0, -1):
-    print(i)
-# # 1.printing multiplication table
-number = int(input("enter the number"))
-for i in range( 1, 11):
-    print(number * i)
+# for i in range(1, 101):
+#     print(i)
+# # 2.Print number 100 to 1 using for and range method
+# for i in range(100, 0, -1):
+#     print(i)
+# # # 1.printing multiplication table
+# number = int(input("enter the number"))
+# for i in range( 1, 11):
+#     print(number * i)
+    
+    
+    
+### Pass Statement -> Pass statement is a null statement that does nothing . It is used as a placeholder for future code.
+
+for i in range(5): 
+    pass
+print("somethind is done")
