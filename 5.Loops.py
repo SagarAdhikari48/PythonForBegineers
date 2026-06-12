@@ -250,16 +250,28 @@
 
 ### Pass Statement -> Pass statement is a null statement that does nothing . It is used as a placeholder for future code.
 
-for i in range(5):
-    pass  # not weiting code here now but in future we might add
-print("somethind is done")
+# for i in range(5):
+#     pass  # not weiting code here now but in future we might add
+# print("somethind is done")
 
 
-# Practice Questions:
-# 1. Write the program to add sum of n natural number
-n = int(input("enter the number to sum"))
-sum = 0
-for i in range(1, n + 1):
-    sum += i
+# # Practice Questions:
+# # 1. Write the program to add sum of n natural number
+# n = int(input("enter the number to sum"))
+# sum = 0
+# for i in range(1, n + 1):
+#     sum += i
     
-print(sum)
+# print(sum)
+
+
+#2.  WAP to find factorial of n number - using for loop
+n = int(input("Enter the number to find the factorial"))
+fact = 1
+i = 1
+while i <= n:
+    fact *= i
+    i += 1
+    
+print(fact)
+
