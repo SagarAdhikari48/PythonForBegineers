@@ -221,20 +221,28 @@
 
 # for i in range(10): # range(stop condition)
 #     print(i)
-    
-    
+
 
 # for i in range(2,10): #range (start, stop)
 #     print(i)
-    
+
 
 # for i in range(2,10,2): #range (start, stop, step)
 #     print(i)
 
 
-
-
-
 ###1. print all even number
-for i in range(2, 100, 2):
+# for i in range(2, 100, 2):
+#     print(i)
+
+
+# 1.Print number 1 to 100 using for and range method
+for i in range(1, 101):
     print(i)
+# 2.Print number 100 to 1 using for and range method
+for i in range(100, 0, -1):
+    print(i)
+# # 1.printing multiplication table
+number = int(input("enter the number"))
+for i in range( 1, 11):
+    print(number * i)
