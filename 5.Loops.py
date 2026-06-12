@@ -171,3 +171,9 @@
         # tup = (1, 2, 3, 4, 5, 2, 8, 9)
         # for val in tup:
         #     print(val)
+        
+        
+### FOr loop in strings
+str = "My name is sagar"
+for ch in str:
+    print(ch)
