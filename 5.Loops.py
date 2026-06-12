@@ -74,12 +74,28 @@ while num <= 10:
     print("square is :", square)
 
     print(array)
-    
-    
+
     ###ORED print-elemets only
-    nums = [1,4, 9, 16, 25,36, 49, 64, 81,100]
+    nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
     idx = 0
     while idx < len(nums):
-        print(nums[idx]);
+        print(nums[idx])
         idx += 1
+
+
+### 5. Search for X number in this tuple using loop
+# (1, 4, 9, 16, 25, 36,49,64,81,100)
+i = 0
+nums = (1, 4, 9, 16, 25, 36,49,64,81,100 ,9 , 16)
+print("Question 5 tuples length: ",len(nums))
+search = int(input("Enter the number you want to find : "))
+while i < len(nums) :
+    if(search == nums[i]):
+        print("Searched number is found as : ", nums[i])
+    else:
+        print("Finding...")
+        
+    i += 1
     
+### BREAK AND CONTINUE 
+#Break - Used to terminate the loop when encountered.
