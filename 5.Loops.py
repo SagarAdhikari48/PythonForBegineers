@@ -174,6 +174,19 @@
         
         
 ### FOr loop in strings
-str = "My name is sagar"
-for ch in str:
+        # str = "My name is sagar"
+        # for ch in str:
+        #     print(ch)
+        
+
+### Else case in for loop - when ever we break the statement we need else case 
+
+string = "Sagaradhikari"
+for ch in string:
+    if(ch == "d"):
+        print("character d is found!")
+        break
     print(ch)
+else:
+    print("End")
+ 
