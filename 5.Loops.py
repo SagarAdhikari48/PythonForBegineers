@@ -181,12 +181,18 @@
 
 ### Else case in for loop - when ever we break the statement we need else case 
 
-string = "Sagaradhikari"
-for ch in string:
-    if(ch == "d"):
-        print("character d is found!")
-        break
-    print(ch)
-else:
-    print("End")
+        # string = "Sagaradhikari"
+        # for ch in string:
+        #     if(ch == "d"):
+        #         print("character d is found!")
+        #         break
+        #     print(ch)
+        # else:
+        #     print("End")
  
+ 
+ ### 1. Print the elements of the following list using a for loop
+nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+for num in nums: 
+    print(num)
+
