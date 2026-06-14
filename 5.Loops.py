@@ -9,7 +9,7 @@
 # while True:  #-> this prints infinitely!
 #     print("Hello Sagar")
 
-# count = 1.0  # iterator
+# count = 1.0  # iterator , print with finite number of times
 # while count <= 5:
 #     print("Hello Sagar")
 #     count += 1
