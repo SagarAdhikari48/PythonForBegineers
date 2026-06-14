@@ -101,8 +101,8 @@
 # calculate_factorial(5)
 
 ###5. Convert to dollar to npr 
-def convert(Usd):
-    Npr = Usd * 152.08
-    print(Usd, " = " ,Npr);
+def convert(usd):
+    npr = usd * 152.08
+    print(usd, "USD = " ,npr ,"NPR");
     
 convert(100)
