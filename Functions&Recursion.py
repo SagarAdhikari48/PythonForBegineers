@@ -43,25 +43,39 @@
 #   2. User Defined Functions -> funtion made by programmer.
 
 
-def calculate_prod(a = 3, b = 4): # Default parameters
-    return a * b
+# def calculate_prod(a = 3, b = 4): # Default parameters
+#     return a * b
 
 
-prod = calculate_prod()
-print(prod)
+# prod = calculate_prod()
+# print(prod)
 
 
-def calculate_prod(a , b = 4): # Default parameters
-    return a * b
-
-
-prod = calculate_prod(1)
-print(prod)
-
-
-#def calculate_prod(a = 5 , b ): ##this cannot be written # Non-default argument follows default argument
+# def calculate_prod(a , b = 4): # Default parameters
 #     return a * b
 
 
 # prod = calculate_prod(1)
 # print(prod)
+
+
+# def calculate_prod(a = 5 , b ): ##this cannot be written # Non-default argument follows default argument
+#     return a * b
+
+
+# prod = calculate_prod(1)
+# print(prod)
+
+
+####1. WAP to print the length in a list. (List is the parameter)
+
+nums = [1, 4, 6, 7, 8, 9, 0]
+cities = ["ktm", "Bkt", "Ltr", "Nuwakot"]
+
+
+def calculate_length(list):
+    print(len(list))
+
+
+calculate_length(nums)
+calculate_length(cities)
