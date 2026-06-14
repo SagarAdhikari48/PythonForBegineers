@@ -133,7 +133,7 @@
 #### Recursion -> Function call itself repeatedly - like loops all the works can be done using recursion and vice versa
 #Recursive function
 def show(n):
-    if(n == 0):
+    if(n == 0): #Base case same as stopping condition in loops
         return
     print(n)
     show(n-1)
