@@ -82,20 +82,27 @@
 
 ###3. WAP to find the element of list in a single line. (list is the parameter)
 
-cities = ["Nuwakot", "Kathmandu", "Pokhara", "Biratnagar", "Dhulikhel"]
-def display_element_in_line(list):
-    for item in list:
-        print(item, end=" ") # this leaves % in the last to remove  this use extra print at last
+# cities = ["Nuwakot", "Kathmandu", "Pokhara", "Biratnagar", "Dhulikhel"]
+# def display_element_in_line(list):
+#     for item in list:
+#         print(item, end=" ") # this leaves % in the last to remove  this use extra print at last
         
-display_element_in_line(cities)
-print()
+# display_element_in_line(cities)
+# print()
 
-###4. WAP to find the factorial of n.(n is the parameter)
+# ###4. WAP to find the factorial of n.(n is the parameter)
 
-def calculate_factorial(n):
-    fact =1
-    for i in range(1, n+1):
-        fact *= i
-    print(fact)
+# def calculate_factorial(n):
+#     fact =1
+#     for i in range(1, n+1):
+#         fact *= i
+#     print(fact)
         
-calculate_factorial(5)
+# calculate_factorial(5)
+
+###5. Convert to dollar to npr 
+def convert(Usd):
+    Npr = Usd * 152.08
+    print(Usd, " = " ,Npr);
+    
+convert(100)
