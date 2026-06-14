@@ -142,12 +142,25 @@
 ###1. Factorial of n using recusion
 
 
-def fact(n):
-    if n == 0 or n == 1:
-        return 1
-    return fact(n - 1) * n
+# def fact(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     return fact(n - 1) * n
 
 
-number = int(input("input number you want to calculate factorial : "))
+# number = int(input("input number you want to calculate factorial : "))
 
-print(fact(number))
+# print(fact(number))
+
+
+###2. Write a recursive function to calculate the summ of first n natural numbers.
+
+def sum_of_natural_number(n):
+    if n == 0:
+        return 0
+    
+    return  sum_of_natural_number(n - 1) + n 
+
+
+sum = sum_of_natural_number(5)
+print(sum)
