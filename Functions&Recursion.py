@@ -118,11 +118,25 @@
 # find_odd_or_even(40)
 # find_odd_or_even(39)
 
-def find_odd_or_even(num):
-    if(num % 2 == 0):
-        print("the number is EVEN")
-    else:
-        print("The number is ODD")
+# def find_odd_or_even(num):
+#     if(num % 2 == 0):
+#         print("the number is EVEN")
+#     else:
+#         print("The number is ODD")
         
-number = int(input("Enter the number you want to know"))
-find_odd_or_even(number)
+# number = int(input("Enter the number you want to know"))
+# find_odd_or_even(number)
+
+
+
+
+#### Recursion -> Function call itself repeatedly - like loops all the works can be done using recursion and vice versa
+#Recursive function
+def show(n):
+    if(n == 0):
+        return
+    print(n)
+    show(n-1)
+    
+show(5)
+
