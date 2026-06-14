@@ -106,3 +106,14 @@ def convert(usd):
     print(usd, "USD = " ,npr ,"NPR");
     
 convert(100)
+
+
+###6. Function to calculate odd or even 
+def find_odd_or_even(num):
+    if(num % 2 == 0):
+        print("the number is EVEN")
+    else:
+        print("The number is ODD")
+        
+find_odd_or_even(40)
+find_odd_or_even(39)
