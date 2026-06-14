@@ -86,7 +86,7 @@
 # def display_element_in_line(list):
 #     for item in list:
 #         print(item, end=" ") # this leaves % in the last to remove  this use extra print at last
-        
+
 # display_element_in_line(cities)
 # print()
 
@@ -97,24 +97,24 @@
 #     for i in range(1, n+1):
 #         fact *= i
 #     print(fact)
-        
+
 # calculate_factorial(5)
 
-###5. Convert to dollar to npr 
+###5. Convert to dollar to npr
 # def convert(usd):
 #     npr = usd * 152.08
 #     print(usd, "USD = " ,npr ,"NPR");
-    
+
 # convert(100)
 
 
-###6. Function to calculate odd or even 
+###6. Function to calculate odd or even
 # def find_odd_or_even(num):
 #     if(num % 2 == 0):
 #         print("the number is EVEN")
 #     else:
 #         print("The number is ODD")
-        
+
 # find_odd_or_even(40)
 # find_odd_or_even(39)
 
@@ -123,20 +123,31 @@
 #         print("the number is EVEN")
 #     else:
 #         print("The number is ODD")
-        
+
 # number = int(input("Enter the number you want to know"))
 # find_odd_or_even(number)
 
 
-
-
 #### Recursion -> Function call itself repeatedly - like loops all the works can be done using recursion and vice versa
-#Recursive function
-def show(n):
-    if(n == 0): #Base case same as stopping condition in loops
-        return
-    print(n)
-    show(n-1)
-    
-show(5)
+# Recursive function
+# def show(n):
+#     if(n == 0): #Base case same as stopping condition in loops
+#         return
+#     print(n)
+#     show(n-1)
 
+# show(5)
+
+
+###1. Factorial of n using recusion
+
+
+def fact(n):
+    if n == 0 or n == 1:
+        return 1
+    return fact(n - 1) * n
+
+
+number = int(input("input number you want to calculate factorial : "))
+
+print(fact(number))
