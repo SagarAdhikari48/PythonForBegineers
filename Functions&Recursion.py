@@ -10,30 +10,58 @@
 # calculate_sum(9, 19)
 # calculate_sum(55, 77)
 
-#More simple 
-#finction defition
-def calculate_sum2(a, b): #parameters
-    return a + b
+# More simple
+# finction defition
+# def calculate_sum2(a, b): #parameters
+#     return a + b
 
 
-sum = calculate_sum2(4, 6) # Function call; arguments
-print(sum)
+# sum = calculate_sum2(4, 6) # Function call; arguments
+# print(sum)
 
 
-def print_hello(): # functions with no arguments
-    print("Hello!")
-    
-print_hello()
+# def print_hello(): # functions with no arguments
+#     print("Hello!")
+
+# print_hello()
 
 
-output = print_hello()
-print(output) # Output is None because the function is not returning anything! 
+# output = print_hello()
+# print(output) # Output is None because the function is not returning anything!
 
 
-## Average of 3 numbers
-def calculate_average(a, b, c):
-    avg = (a + b + c) / 3
-    print(avg)
-    return avg
+# ## Average of 3 numbers
+# def calculate_average(a, b, c):
+#     avg = (a + b + c) / 3
+#     print(avg)
+#     return avg
 
-calculate_average(4, 5, 6)
+# calculate_average(4, 5, 6)
+
+
+### Types of Functions: 1. Built-in Functions -> print(), len(), type(), range(), etc
+#   2. User Defined Functions -> funtion made by programmer.
+
+
+def calculate_prod(a = 3, b = 4): # Default parameters
+    return a * b
+
+
+prod = calculate_prod()
+print(prod)
+
+
+def calculate_prod(a , b = 4): # Default parameters
+    return a * b
+
+
+prod = calculate_prod(1)
+print(prod)
+
+
+#def calculate_prod(a = 5 , b ): ##this cannot be written # Non-default argument follows default argument
+#     return a * b
+
+
+# prod = calculate_prod(1)
+# print(prod)
