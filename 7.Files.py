@@ -21,4 +21,7 @@
 f = open("demo.txt", "rt") # if in case the  location of text file is any other location we have to provide complete path /Users/sagar/work/python/demo.txt
 line1 = f.readline() # read only one line
 print(line1)
+#Space will occurs in the output after readline one , two and so on.
+line2 = f.readline() # read only second line
+print(line2)
 f.close()
