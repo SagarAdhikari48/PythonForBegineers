@@ -101,19 +101,28 @@
 # calculate_factorial(5)
 
 ###5. Convert to dollar to npr 
-def convert(usd):
-    npr = usd * 152.08
-    print(usd, "USD = " ,npr ,"NPR");
+# def convert(usd):
+#     npr = usd * 152.08
+#     print(usd, "USD = " ,npr ,"NPR");
     
-convert(100)
+# convert(100)
 
 
 ###6. Function to calculate odd or even 
+# def find_odd_or_even(num):
+#     if(num % 2 == 0):
+#         print("the number is EVEN")
+#     else:
+#         print("The number is ODD")
+        
+# find_odd_or_even(40)
+# find_odd_or_even(39)
+
 def find_odd_or_even(num):
     if(num % 2 == 0):
         print("the number is EVEN")
     else:
         print("The number is ODD")
         
-find_odd_or_even(40)
-find_odd_or_even(39)
+number = int(input("Enter the number you want to know"))
+find_odd_or_even(number)
