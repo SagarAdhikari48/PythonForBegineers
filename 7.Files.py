@@ -34,5 +34,5 @@
 
 
 f = open("demo.txt", "a")
-f.write("I am opening file in append method which will add the text after existing text in a file")
+f.write("\nI am opening file in append method which will add the text after existing text in a file")
 f.close()
