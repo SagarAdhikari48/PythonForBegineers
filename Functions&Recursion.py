@@ -69,13 +69,23 @@
 
 ####1. WAP to print the length in a list. (List is the parameter)
 
-nums = [1, 4, 6, 7, 8, 9, 0]
-cities = ["ktm", "Bkt", "Ltr", "Nuwakot"]
+# nums = [1, 4, 6, 7, 8, 9, 0]
+# cities = ["ktm", "Bkt", "Ltr", "Nuwakot"]
 
 
-def calculate_length(list):
-    print(len(list))
+# def calculate_length(list):
+#     print(len(list))
 
 
-calculate_length(nums)
-calculate_length(cities)
+# calculate_length(nums)
+# calculate_length(cities)
+
+###3. WAP to find the element of list in a single line. (list is the parameter)
+
+cities = ["Nuwakot", "Kathmandu", "Pokhara", "Biratnagar", "Dhulikhel"]
+def display_element_in_line(list):
+    for item in list:
+        print(item, end=" ") # this leaves % in the last to remove  this use extra print at last
+        
+display_element_in_line(cities)
+print()
