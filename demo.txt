@@ -1,2 +1,1 @@
-Hi my name is sagar adhikari. 
-I am learning python.
+I am opening gile in write overrde method which will completely overrides the existing file and replace by this text

@@ -2,12 +2,13 @@
 ##types of files 1. Text Files: .txt, .docs, .log etc
 # 2. Binary Files: .mp4, .mov, .png, .jpeg etc
 
+
+###OPEN and READ
 # f = open("demo.txt", "rt") # if in case the  location of text file is any other location we have to provide complete path /Users/sagar/work/python/demo.txt
 # data = f.read()
 # print(data)
 # print(type(data))
 # f.close()
-
 
 
 # f = open("demo.txt", "rt") # if in case the  location of text file is any other location we have to provide complete path /Users/sagar/work/python/demo.txt
@@ -17,11 +18,16 @@
 # f.close()
 
 
+# f = open("demo.txt", "rt") # if in case the  location of text file is any other location we have to provide complete path /Users/sagar/work/python/demo.txt
+# line1 = f.readline() # read only one line
+# print(line1)
+# # Space will occurs in the output after readline one , two and so on.
+# line2 = f.readline() # read only second line
+# print(line2)
+# f.close()
 
-f = open("demo.txt", "rt") # if in case the  location of text file is any other location we have to provide complete path /Users/sagar/work/python/demo.txt
-line1 = f.readline() # read only one line
-print(line1)
-#Space will occurs in the output after readline one , two and so on.
-line2 = f.readline() # read only second line
-print(line2)
+
+### WRITING TO A FILE - open file in "w" write override mode or "a" append mode - add at the end
+f = open("demo.txt", "w")
+f.write("I am opening file in write overrde method which will completely overrides the existing file and replace by this text")
 f.close()
