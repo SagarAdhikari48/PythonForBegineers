@@ -155,12 +155,27 @@
 
 ###2. Write a recursive function to calculate the summ of first n natural numbers.
 
-def sum_of_natural_number(n):
-    if n == 0:
-        return 0
+# def sum_of_natural_number(n):
+#     if n == 0:
+#         return 0
+
+#     return  sum_of_natural_number(n - 1) + n
+
+
+# sum = sum_of_natural_number(5)
+# print(sum)
+
+
+###3. Write a recursive function to print all element in a list . HInt: Use list and index as parameter.
+
+def print_all_element(nums, idx=0):
+    if idx == len(nums):
+        return
+
+    print(nums[idx])
+    print_all_element(nums, idx + 1)
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8]
+print_all_element(nums)
     
-    return  sum_of_natural_number(n - 1) + n 
 
-
-sum = sum_of_natural_number(5)
-print(sum)
