@@ -32,7 +32,12 @@
 # f.write("I am opening file in write overrde method which will completely overrides the existing file and replace by this text")
 # f.close()
 
+##APPEND MODE
+# f = open("demo.txt", "a")
+# f.write("\nI am opening file in append method which will add the text after existing text in a file")
+# f.close()
 
-f = open("demo.txt", "a")
-f.write("\nI am opening file in append method which will add the text after existing text in a file")
+##NO FILE WAS CREATED AND TRIED TO OPEN
+
+f = open("sample.txt", "w")
 f.close()
