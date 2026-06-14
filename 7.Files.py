@@ -37,7 +37,11 @@
 # f.write("\nI am opening file in append method which will add the text after existing text in a file")
 # f.close()
 
-##NO FILE WAS CREATED AND TRIED TO OPEN
+##NO FILE WAS CREATED AND TRIED TO OPEN (In write mode)
 
-f = open("sample.txt", "w")
+# f = open("sample.txt", "w")
+# f.close()
+
+##NO FILE WAS CREATED AND TRIED TO OPEN (In append mode)
+f = open("sample1.txt", "a")
 f.close()
