@@ -2,8 +2,16 @@
 ##types of files 1. Text Files: .txt, .docs, .log etc
 # 2. Binary Files: .mp4, .mov, .png, .jpeg etc
 
+# f = open("demo.txt", "rt") # if in case the  location of text file is any other location we have to provide complete path /Users/sagar/work/python/demo.txt
+# data = f.read()
+# print(data)
+# print(type(data))
+# f.close()
+
+
+
 f = open("demo.txt", "rt") # if in case the  location of text file is any other location we have to provide complete path /Users/sagar/work/python/demo.txt
-data = f.read()
+data = f.read(5) # read upto 5 characters
 print(data)
 print(type(data))
 f.close()
