@@ -89,3 +89,13 @@ def display_element_in_line(list):
         
 display_element_in_line(cities)
 print()
+
+###4. WAP to find the factorial of n.(n is the parameter)
+
+def calculate_factorial(n):
+    fact =1
+    for i in range(1, n+1):
+        fact *= i
+    print(fact)
+        
+calculate_factorial(5)
