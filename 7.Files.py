@@ -43,5 +43,10 @@
 # f.close()
 
 ##NO FILE WAS CREATED AND TRIED TO OPEN (In append mode)
-f = open("sample1.txt", "a")
+# f = open("sample1.txt", "a")
+# f.close()
+
+##r+ MODE 
+f = open("demo.txt", "r+")
+f.write("abc")
 f.close()
