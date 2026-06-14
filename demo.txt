@@ -1,1 +1,1 @@
-I am opening gile in write overrde method which will completely overrides the existing file and replace by this text
+I am opening gile in write overrde method which will completely overrides the existing file and replace by this textI am opening file in append method which will add the text after existing text in a fileI am opening file in append method which will add the text after existing text in a file

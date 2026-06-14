@@ -28,6 +28,11 @@
 
 
 ### WRITING TO A FILE - open file in "w" write override mode or "a" append mode - add at the end
-f = open("demo.txt", "w")
-f.write("I am opening file in write overrde method which will completely overrides the existing file and replace by this text")
+# f = open("demo.txt", "w")
+# f.write("I am opening file in write overrde method which will completely overrides the existing file and replace by this text")
+# f.close()
+
+
+f = open("demo.txt", "a")
+f.write("I am opening file in append method which will add the text after existing text in a file")
 f.close()
