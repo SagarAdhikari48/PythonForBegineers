@@ -10,8 +10,15 @@
 
 
 
+# f = open("demo.txt", "rt") # if in case the  location of text file is any other location we have to provide complete path /Users/sagar/work/python/demo.txt
+# data = f.read(5) # read upto 5 characters
+# print(data)
+# print(type(data))
+# f.close()
+
+
+
 f = open("demo.txt", "rt") # if in case the  location of text file is any other location we have to provide complete path /Users/sagar/work/python/demo.txt
-data = f.read(5) # read upto 5 characters
-print(data)
-print(type(data))
+line1 = f.readline() # read only one line
+print(line1)
 f.close()
