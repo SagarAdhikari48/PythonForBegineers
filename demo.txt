@@ -1,2 +1,2 @@
-abc this will override the existing text in the file from the beginning of the fileing file and replace by this textI am opening file in append method which will add the text after existing text in a fileI am opening file in append method which will add the text after existing text in a file
+abc this will override the existing text in the file from the beginning of the fileing file and replace by this text I am opening file in append method which will add the text after existing text in a fileI am opening file in append method which will add the text after existing text in a file
 I am opening file in append method which will add the text after existing text in a file

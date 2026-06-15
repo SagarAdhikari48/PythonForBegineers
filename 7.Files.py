@@ -49,4 +49,5 @@
 ## r+ MODE 
 f = open("demo.txt", "r+")
 f.write("abc this will override the existing text in the file from the beginning of the file")
+print(f.read())
 f.close()
