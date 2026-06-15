@@ -53,22 +53,31 @@
 # f.close()
 
 
-## w+ MODE - file open in truncated - completely wiped out mode and write the text in the file and then read the text from the file
-#This will print nothing because the file is opened in write mode and the pointer is at the end of the file after writing the text in the file. So we have to move the pointer
-# #f.seek(0)  # Move the pointer to the beginning of the file - this will move the pointer to the beginning of the file using seek() method.
-f = open("demo.txt", "w+")
-f.write("w+ mode")
-# f.seek(0)  # Move the pointer to the beginning of the file
-print(f.read())
-f.close()
+# ## w+ MODE - file open in truncated - completely wiped out mode and write the text in the file and then read the text from the file
+# #This will print nothing because the file is opened in write mode and the pointer is at the end of the file after writing the text in the file. So we have to move the pointer
+# # #f.seek(0)  # Move the pointer to the beginning of the file - this will move the pointer to the beginning of the file using seek() method.
+# f = open("demo.txt", "w+")
+# f.write("w+ mode")
+# # f.seek(0)  # Move the pointer to the beginning of the file
+# print(f.read())
+# f.close()
 
 
 
-## a+ MODE - file open in append mode and write the text in the file and then read the text from the file
-#This will print nothing because the file is opened in append mode and the pointer is at the end of the file after writing the text in the file. So we have to move the pointer
-# #f.seek(0)  # Move the pointer to the beginning of the file - this will move the pointer to the beginning of the file using seek() method.
-f = open("demo.txt", "a+")
-f.write("a+ mode")
-# f.seek(0)  # Move the pointer to the beginning of the file
-print(f.read())
-f.close()
+# ## a+ MODE - file open in append mode and write the text in the file and then read the text from the file
+# #This will print nothing because the file is opened in append mode and the pointer is at the end of the file after writing the text in the file. So we have to move the pointer
+# # #f.seek(0)  # Move the pointer to the beginning of the file - this will move the pointer to the beginning of the file using seek() method.
+# f = open("demo.txt", "a+")
+# f.write("a+ mode")
+# # f.seek(0)  # Move the pointer to the beginning of the file
+# print(f.read())
+# f.close()
+
+
+### WITH SYNTAX - No need to close file in this syntax it automatically closes the file
+# with open("demo.txt","a") as f:
+# data = f.read()
+
+with open("demo.txt", "r") as f:
+    data = f.read()
+    print(data)

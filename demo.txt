@@ -1,1 +1,1 @@
-w+ modea+ mode
+This is demo for with syntax which automatically closes files.
