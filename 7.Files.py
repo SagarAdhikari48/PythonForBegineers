@@ -46,7 +46,7 @@
 # f = open("sample1.txt", "a")
 # f.close()
 
-##r+ MODE 
+## r+ MODE 
 f = open("demo.txt", "r+")
-f.write("abc")
+f.write("abc this will override the existing text in the file from the beginning of the file")
 f.close()
