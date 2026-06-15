@@ -82,6 +82,15 @@
 #     data = f.read()
 #     print(data)
     
-with open("demot.txt", "w") as f:
-    f.write("This is a write mode with syntax")
+# with open("demot.txt", "w") as f:
+#     f.write("This is a write mode with syntax")
     
+    
+### DELETING A FILE - using the os module 
+# Module like code library is a file written by another programmer that fenerally has a functions we can use.
+# import os
+#os.remove(filename)
+
+
+import os
+os.remove("sample.txt")
