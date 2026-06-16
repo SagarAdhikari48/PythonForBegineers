@@ -66,3 +66,4 @@ print(s2.name, s2.marks)
 ## THe self parameter in the constructor above is a reference to the current instance of the class and is used to access variables that belongs to the class.
 # With the help of the self parameter we can store different variables or different datas.
 # THe data stored inside class or the object are called attributes or variables.
+# We will not define multiple constructor for a single class
