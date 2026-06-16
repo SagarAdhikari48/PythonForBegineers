@@ -141,18 +141,33 @@
 ###5. WAP to find in which line of the file does the word "learning "occura first. Print -1 if word not found.
 
 
-def find_line_for_word_exists():
-    word = "learning"
-    data = True
-    line_no = 1
-    with open("practice.txt", "r") as f:
-        while data:
-            data = f.readline()
-            if word in data:
-                print(line_no)
-                return
-            line_no += 1
-    return -1
+# def find_line_for_word_exists():
+#     word = "learning"
+#     data = True
+#     line_no = 1
+#     with open("practice.txt", "r") as f:
+#         while data:
+#             data = f.readline()
+#             if word in data:
+#                 print(line_no)
+#                 return
+#             line_no += 1
+#     return -1
 
 
-print(find_line_for_word_exists())
+# print(find_line_for_word_exists())
+
+###6.WAP From a file containing numbers seperated by comma, print the count of even numbers.
+with open("practice.txt", "r") as f:
+    data = f.read()
+    print(data)
+
+    num = ""
+    for i in range(len(data)):
+        if data[i] == ",":
+            print(int(num))
+            num = ""
+
+        else:
+            num += data[i]
+    print(int(num))
