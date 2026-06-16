@@ -46,7 +46,7 @@
 # f = open("sample1.txt", "a")
 # f.close()
 
-# ## r+ MODE 
+# ## r+ MODE
 # f = open("demo.txt", "r+")
 # f.write("abc this will override the existing text in the file from the beginning of the file")
 # print(f.read())
@@ -61,7 +61,6 @@
 # # f.seek(0)  # Move the pointer to the beginning of the file
 # print(f.read())
 # f.close()
-
 
 
 # ## a+ MODE - file open in append mode and write the text in the file and then read the text from the file
@@ -81,15 +80,15 @@
 # with open("demo.txt", "r") as f:
 #     data = f.read()
 #     print(data)
-    
+
 # with open("demot.txt", "w") as f:
 #     f.write("This is a write mode with syntax")
-    
-    
+
+
 ### DELETING A FILE - using the os module we cannot delete a file using the built in function but we can use the os module to delete a file. os module is a built in module in python which provides functions to interact with the operating system.
 # Module like code library is a file written by another programmer that fenerally has a functions we can use.
 # import os
-#os.remove(filename)
+# os.remove(filename)
 
 
 # import os
@@ -105,15 +104,23 @@
 # with open("practice.txt" , "w") as f:
 #     f.write("Hi everyone \nwe are learning File I/O\n")
 #     f.write("using java \nI like programming in java")
-    
-    
+
+
 ###2. WAp that replaces all ocurrances of "java" with "python" in above file.
+# with open("practice.txt", "r") as f:
+#     data = f.read()
+
+#     new_data = data.replace("java", "python")
+#     print(new_data)
+
+# with open("practice.txt", "w") as f:
+#     f.write(new_data)
+
+###3. Search if the word learning exists in the file or not
+word = "learning"
 with open("practice.txt", "r") as f:
     data = f.read()
-    
-    new_data = data.replace("java", "python")
-    print(new_data)
-
-with open("practice.txt", "w") as f:
-    f.write(new_data)
-
+    if data.find(word) != -1:
+        print("Found!")
+    else:
+        print("Not Found!")
