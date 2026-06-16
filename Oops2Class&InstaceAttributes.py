@@ -1,9 +1,9 @@
 # Class attributes defines only once in a memory
 class Student:
     college_name = "Advanced College" # This is a class attributes - the s1 and s2  object should have same college name.
+    name = "any" # class attributes
     def __init__(self, fullname, marks):
-        self.name = fullname # the s1 and s2 objects has different name and marks so they are within a constructor with self parameter
-        self.marks = marks
+        self.name = fullname  # Object attr > class attr so the print(s1.name will print "Sagar Adhikari" not "any " in the class)
         print("Adding new student in database...")
 
 
