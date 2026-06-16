@@ -14,3 +14,5 @@ print(s1.name, s1.marks)
 s2 = Student("Aarogy Adhikari", 90)
 print(s2.name, s2.marks)
 print(s2.college_name)
+# also 
+print(Student.college_name)
