@@ -127,12 +127,32 @@
 
 
 ###4. convert above in the function
-def convert_to_function():
-    word = "vlearning"
+# def convert_to_function():
+#     word = "vlearning"
+#     with open("practice.txt", "r") as f:
+#         data = f.read()
+#         if data.find(word) != -1:
+#             print("Found!")
+#         else:
+#             print("Not Found!")
+# convert_to_function()
+
+
+###5. WAP to find in which line of the file does the word "learning "occura first. Print -1 if word not found.
+
+
+def find_line_for_word_exists():
+    word = "learning"
+    data = True
+    line_no = 1
     with open("practice.txt", "r") as f:
-        data = f.read()
-        if data.find(word) != -1:
-            print("Found!")
-        else:
-            print("Not Found!")
-convert_to_function()
+        while data:
+            data = f.readline()
+            if word in data:
+                print(line_no)
+                return
+            line_no += 1
+    return -1
+
+
+print(find_line_for_word_exists())
