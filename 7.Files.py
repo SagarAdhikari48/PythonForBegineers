@@ -102,6 +102,18 @@
 # using Java.
 # I like programming in Java
 
-with open("practice.txt" , "w") as f:
-    f.write("Hi everyone \nwe are learning File I/O\n")
-    f.write("using java \nI like programming in java")
+# with open("practice.txt" , "w") as f:
+#     f.write("Hi everyone \nwe are learning File I/O\n")
+#     f.write("using java \nI like programming in java")
+    
+    
+###2. WAp that replaces all ocurrances of "java" with "python" in above file.
+with open("practice.txt", "r") as f:
+    data = f.read()
+    
+    new_data = data.replace("java", "python")
+    print(new_data)
+
+with open("practice.txt", "w") as f:
+    f.write(new_data)
+
