@@ -158,6 +158,7 @@
 # print(find_line_for_word_exists())
 
 ###6.WAP From a file containing numbers seperated by comma, print the count of even numbers.
+count = 0
 with open("practice.txt", "r") as f:
     data = f.read()
     print(data)
@@ -166,8 +167,12 @@ with open("practice.txt", "r") as f:
     for i in range(len(data)):
         if data[i] == ",":
             print(int(num))
+            if(int(num) % 2 == 0):
+                count += 1
             num = ""
 
         else:
             num += data[i]
+            
     print(int(num))
+    print("Even number count is : ",count)
