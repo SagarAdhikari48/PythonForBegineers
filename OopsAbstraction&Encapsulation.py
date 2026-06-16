@@ -22,7 +22,6 @@ c1.start()
 ####1. Create Account class with 2 attributes - balance and account no. Create methods for debit, credit and  printing the balance.
 
 class Account:
-     
      def __init__(self, blc ,acc_no):
          self.balance = blc
          self.account_number = acc_no
