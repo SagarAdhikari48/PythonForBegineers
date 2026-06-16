@@ -117,10 +117,22 @@
 #     f.write(new_data)
 
 ###3. Search if the word learning exists in the file or not
-word = "learning"
-with open("practice.txt", "r") as f:
-    data = f.read()
-    if data.find(word) != -1:
-        print("Found!")
-    else:
-        print("Not Found!")
+# word = "learning"
+# with open("practice.txt", "r") as f:
+#     data = f.read()
+#     if data.find(word) != -1:
+#         print("Found!")
+#     else:
+#         print("Not Found!")
+
+
+###4. convert above in the function
+def convert_to_function():
+    word = "vlearning"
+    with open("practice.txt", "r") as f:
+        data = f.read()
+        if data.find(word) != -1:
+            print("Found!")
+        else:
+            print("Not Found!")
+convert_to_function()
