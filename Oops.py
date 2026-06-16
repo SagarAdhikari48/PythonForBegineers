@@ -31,11 +31,27 @@
 #Example
 
 class Student:
-    name = "Sagar Adhikari"
+    def __init__(self, fullname,marks):  ## Self refers to the new object beiing created. self means my self
+        # print(self) #This will prints <__main__.Student object at 0x1007e8550> student object at that location 0x100.... 
+        self.name = fullname
+        self.marks = marks
+        print("Adding new student in database...") # this constructor invoked automatically
 
-s1 = Student()
-print(s1.name)
+s1 = Student("Sagar Adhikari",80)
+# print("this means constructor self simply mean  self means s1 object",s1)
+print(s1.name, s1.marks)
 
-s2 = Student()
-print(s2.name)
-#Here no init function is defined but it automatically creates the init function and executed. there will be always condtructure for us.
+
+s2 = Student("Aarogy Adhikari", 90)
+print(s2.name, s2.marks)
+
+
+##Output
+    # Adding new student in database...
+    # Sagar Adhikari
+    # Adding new student in database...
+    # Aarogy Adhikari
+
+## THe self parameter in the constructor above is a reference to the current instance of the class and is used to access variables that belongs to the class.
+# With the help of the self parameter we can store different variables or different datas.
+#THe data stored inside class or the object are called attributes or variables.
