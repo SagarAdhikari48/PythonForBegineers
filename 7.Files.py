@@ -86,7 +86,7 @@
 #     f.write("This is a write mode with syntax")
     
     
-### DELETING A FILE - using the os module 
+### DELETING A FILE - using the os module we cannot delete a file using the built in function but we can use the os module to delete a file. os module is a built in module in python which provides functions to interact with the operating system.
 # Module like code library is a file written by another programmer that fenerally has a functions we can use.
 # import os
 #os.remove(filename)
