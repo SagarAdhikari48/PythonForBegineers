@@ -35,3 +35,4 @@ s1.calculate_average()
 
 s1.hello() # this will throw error as : Student.hello() takes 0 positional arguments but 1 was given if no static method decorator is added
 # Decorators allows us to wrap another function in order to extend the behaviour of the wrapped function , without permanently modifying it.
+# Simply - Decorators are the function that takes function as argument and return function as output.
