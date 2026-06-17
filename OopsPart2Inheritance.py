@@ -31,24 +31,43 @@
 
 # print(car1.start()) #this is due  inheritance
 # print(car1.color) ## attributes inherit
+   
+   
+   
+### Multilevel inheritance -> Inheritance goes level wise 
         
+# class Car:
+#     @staticmethod
+#     def start():
+#         print("Car started...")
         
-class Car:
-    @staticmethod
-    def start():
-        print("Car started...")
+#     @staticmethod
+#     def stop():
+#         print("The car stopped...")
         
-    @staticmethod
-    def stop():
-        print("The car stopped...")
+# class ToyataCar(Car):#Inheritance 
+#     def __init__(self, brand):
+#         self.brand = brand
         
-class ToyataCar(Car):#Inheritance 
-    def __init__(self, brand):
-        self.brand = brand
+# class Fortuner(ToyataCar):
+#     def __init__(self, type):
+#         self.type = type
         
-class Fortuner(ToyataCar):
-    def __init__(self, type):
-        self.type = type
-        
-car1 = Fortuner("Diesel")
-car1.start()
+# car1 = Fortuner("Diesel")
+# car1.start()
+
+
+### MULTIPLE INHERITANCE - A child class inherit multiple parent class
+class A:
+    varA = "Welcome to class A"
+    
+class B:
+    varB = "Welcome to class B"
+    
+class C(A, B):
+    varC = "Welcome to class C"
+    
+c1 = C()
+print(c1.varA)
+print(c1.varB)
+print(c1.varC)
