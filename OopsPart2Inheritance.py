@@ -74,25 +74,47 @@
 ####SUPER METHOD -> whenever we need to call any method in parent class we need to use super
 
 
-class Car:
+# class Car:
 
-    def __init__(self, type):
-        self.type = type
+#     def __init__(self, type):
+#         self.type = type
 
-    @staticmethod
-    def start():
-        print("Car started...")
+#     @staticmethod
+#     def start():
+#         print("Car started...")
 
-    @staticmethod
-    def stop():
-        print("The car stopped...")
+#     @staticmethod
+#     def stop():
+#         print("The car stopped...")
 
 
-class ToyataCar(Car):  # Inheritance
-    def __init__(self, name, type):
-        super().__init__(type) # this will pass type to parent class and will not throw wrror
-        self.name = name
-        super().start()
+# class ToyataCar(Car):  # Inheritance
+#     def __init__(self, name, type):
+#         super().__init__(type) # this will pass type to parent class and will not throw wrror
+#         self.name = name
+#         super().start()
 
-car1 = ToyataCar("pirus", "electric")
-print(car1.type)
+# car1 = ToyataCar("pirus", "electric")
+# print(car1.type)
+
+
+
+
+
+
+### CLASS METHOD -> A class method is bound to the class and receives the class as an implicit first argument. this is not repeatedly created for any instance or each object. 
+# Note - static method can't access or modify class and generally for utility
+# class method is a method that is bound to the class and not the object of the class. 
+# It can modify a class state that applies across all instances of the class. It takes cls as first parameter instead of self.
+class Person:
+    name = "Anonymous"
+    
+    
+    @classmethod
+    def change_name(cls, name):
+        cls.name = name
+        
+p1 = Person()
+p1.change_name("Sagar Adhikari")
+print(p1.name)
+print(Person.name)
