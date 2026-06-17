@@ -9,8 +9,31 @@
 # class ToyataCar(Car):
 #     .........
 
+# class Car:
+#     color = "black"
+#     @staticmethod
+#     def start():
+#         print("Car started...")
+        
+#     @staticmethod
+#     def stop():
+#         print("The car stopped...")
+        
+# class ToyataCar(Car):#Inheritance 
+#     def __init__(self, name):
+#         self.name = name
+        
+# car1 = ToyataCar("fortuner")
+# car2 = ToyataCar("prius")
+
+# print(car1.name)
+# print(car2.name)
+
+# print(car1.start()) #this is due  inheritance
+# print(car1.color) ## attributes inherit
+        
+        
 class Car:
-    color = "black"
     @staticmethod
     def start():
         print("Car started...")
@@ -20,15 +43,12 @@ class Car:
         print("The car stopped...")
         
 class ToyataCar(Car):#Inheritance 
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, brand):
+        self.brand = brand
         
-car1 = ToyataCar("fortuner")
-car2 = ToyataCar("prius")
-
-print(car1.name)
-print(car2.name)
-
-print(car1.start()) #this is due  inheritance
-print(car1.color) ## attributes inherit
+class Fortuner(ToyataCar):
+    def __init__(self, type):
+        self.type = type
         
+car1 = Fortuner("Diesel")
+car1.start()
