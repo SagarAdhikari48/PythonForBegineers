@@ -50,3 +50,22 @@ class Engineer(Employee):
 
 eng1 = Engineer("Elon Musk", 50)
 eng1.show_details()
+
+
+#### 3. Create a class called Order which stores item and price. Use Dunder function __gt__() to convey that
+# order1 > order2 if the price of Order1 > price of order2
+
+
+class Order:
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
+        
+    def __gt__(self, od2):
+        return self.price > od2.price
+
+
+od1 = Order("Pizza", 250)
+od2 = Order("Samosa", 200)
+
+print(od1 > od2)
