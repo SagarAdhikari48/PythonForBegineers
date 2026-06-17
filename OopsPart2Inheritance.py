@@ -118,3 +118,10 @@ p1 = Person()
 p1.change_name("Sagar Adhikari")
 print(p1.name)
 print(Person.name)
+
+
+
+### Confusion - we have 3 types functions:
+#1. Static Mehods -> method as they are called- this methods donot take and access any argument
+#2. Class Method -> this takes (class) as implicit argument
+#3. Instance Methods -> Normal method - this takes (self ) as an argument
