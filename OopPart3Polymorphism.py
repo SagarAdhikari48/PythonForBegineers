@@ -24,9 +24,14 @@ class Complex:
     def show_number(self):
         print(self.real, "i +", self.img, "j")
 
-    def add(self, num2):
+    def __add__(self, num2): #Dunder function with double underscore added
         new_real = self.real + num2.real
         new_img = self.img + num2.img
+        return Complex(new_real, new_img)
+    
+    def __sub__(self, num2): #Dunder function with double underscore added
+        new_real = self.real - num2.real
+        new_img = self.img - num2.img
         return Complex(new_real, new_img)
 
 
@@ -35,6 +40,12 @@ c1.show_number()
 
 c2 = Complex(3, 4)
 c2.show_number()
-
-c3 = c1.add(c2);
+# if i dont add like this  c3 = c1.add(c2)
+#if i want to add like this print(c1 + c2) or c3 = c1 + c2 the dunder function come into action
+# without dunder function it throws TypeError: unsupported operand type(s) for +: 'Complex' and 'Complex'
+c3 = c1 + c2
 c3.show_number()
+
+
+c4 = c1 - c2
+c4.show_number()
