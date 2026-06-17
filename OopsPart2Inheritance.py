@@ -125,3 +125,28 @@ print(Person.name)
 #1. Static Mehods -> method as they are called- this methods donot take and access any argument
 #2. Class Method -> this takes (class) as implicit argument
 #3. Instance Methods -> Normal method - this takes (self ) as an argument
+
+
+
+
+#### PROPERTY - we use @property decorator on any method in the class to use the method as a property.
+# when the value of attributes depends on function we make the function as property.
+class Student:
+    def __init__(self,phy,che,math):
+        self.phy = phy
+        self.che = che
+        self.math = math
+        
+        
+    @property
+    def percentage(self):
+        return str((self.phy + self.che + self.math) / 3) + "%"
+    
+std1 = Student(98, 97, 99)
+print(std1.percentage) # this is 98%
+
+std1.phy = 86
+print(std1.percentage) # this will be 94%
+
+# Thus the percentage value depends on the marks of the subjects
+    
