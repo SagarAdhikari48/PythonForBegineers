@@ -149,4 +149,11 @@ std1.phy = 86
 print(std1.percentage) # this will be 94%
 
 # Thus the percentage value depends on the marks of the subjects
+
+
+
+
+# REsearch and do it yourself
+# # @getter
+# # @setter
     
