@@ -10,6 +10,7 @@
 #     .........
 
 class Car:
+    color = "black"
     @staticmethod
     def start():
         print("Car started...")
@@ -29,4 +30,5 @@ print(car1.name)
 print(car2.name)
 
 print(car1.start()) #this is due  inheritance
+print(car1.color) ## attributes inherit
         
