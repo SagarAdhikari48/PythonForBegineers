@@ -36,3 +36,20 @@
 # print(acc1.reset_pass())
 # print(acc1.__acc)  # error 'Account' object has no attribute '__acc'
 # print(acc1.__password)  # this cannot access outside class
+
+
+
+class Person:
+    __name = "Anonymous"
+    
+    def __hello(self):
+        print("Hello Anonymous")
+        
+    def welcome(self):
+        
+        self.__hello()
+        
+        
+p1 = Person()
+print(p1.welcome()) # No Error
+print(p1.__hello()) #Error: AttributeError: 'Person' object has no attribute '__hello'
