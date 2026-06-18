@@ -68,18 +68,35 @@ def find_pallindrome(text):
     reversed = ""
     for ch in text:
         reversed = ch + reversed
-    if(reversed == text):
+    if reversed == text:
         print("This is pallindrome : ", text)
     else:
-        print(text,"is not a pallidrome" )
-        
+        print(text, "is not a pallidrome")
+
+
 # find_pallindrome("madam")
 # find_pallindrome("sagar")
 
 # ORED
 
-def is_palindrome(text):
-    return text == text[:: -1]
 
-print(is_palindrome("madam"))
-print(is_palindrome("this is palindrome test"))
+def is_palindrome(text):
+    return text == text[::-1]
+
+
+# print(is_palindrome("madam"))
+# print(is_palindrome("this is palindrome test"))
+
+
+# Challenge #5: Count Vowels - OpenAI
+# Count the number of vowels in a string.
+def count_vowels(text):
+    count = 0
+    vowel = "aeiou"
+    for char in text.lower():
+        if char in vowel:
+            count += 1
+            
+    return count
+print(count_vowels("OpenAI"))
+print(count_vowels("Orange"))
