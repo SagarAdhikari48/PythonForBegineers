@@ -39,15 +39,17 @@ def find_largest(numbers):
 
 # 3 .Reverse a string without using built-in reverse functions.
 
+
 def find_reverse_of_string(value):
     reversed_string = ""
     for i in range(0, len(value)):
         reversed_string = value[i] + reversed_string
         i += 1
     return reversed_string
-        
-        
+
+
 # print(find_reverse_of_string("Hello"))
+
 
 # Ored
 def find_reverse2(text):
@@ -55,4 +57,21 @@ def find_reverse2(text):
     for ch in text:
         reversed = ch + reversed
     return reversed
+
+
 # print(find_reverse2("Sagar"))
+
+
+# Challenge #4: Check Palindrome
+# Determine whether a string reads the same forwards and backwards.
+def find_pallindrome(text):
+    reversed = ""
+    for ch in text:
+        reversed = ch + reversed
+    if(reversed == text):
+        print("This is pallindrome : ", text)
+    else:
+        print(text,"is not a pallidrome" )
+        
+find_pallindrome("madam")
+find_pallindrome("sagar")
