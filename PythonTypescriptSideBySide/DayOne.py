@@ -22,7 +22,7 @@ def find_largest_number(nums):
     print("The largest number in the list is : ", largest)
 
 
-find_largest_number([4, 10, 7, 99, 5, 120])
+# find_largest_number([4, 10, 7, 99, 5, 120])
 
 # ORED
 
@@ -35,4 +35,24 @@ def find_largest(numbers):
     return largest
 
 
-print("Largest : ",find_largest([1, 3, 6, 90, 44, 36]))
+# print("Largest : ",find_largest([1, 3, 6, 90, 44, 36]))
+
+# 3 .Reverse a string without using built-in reverse functions.
+
+def find_reverse_of_string(value):
+    reversed_string = ""
+    for i in range(0, len(value)):
+        reversed_string = value[i] + reversed_string
+        i += 1
+    return reversed_string
+        
+        
+# print(find_reverse_of_string("Hello"))
+
+# Ored
+def find_reverse2(text):
+    reversed = ""
+    for ch in text:
+        reversed = ch + reversed
+    return reversed
+# print(find_reverse2("Sagar"))
