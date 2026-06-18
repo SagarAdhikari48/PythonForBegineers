@@ -73,5 +73,13 @@ def find_pallindrome(text):
     else:
         print(text,"is not a pallidrome" )
         
-find_pallindrome("madam")
-find_pallindrome("sagar")
+# find_pallindrome("madam")
+# find_pallindrome("sagar")
+
+# ORED
+
+def is_palindrome(text):
+    return text == text[:: -1]
+
+print(is_palindrome("madam"))
+print(is_palindrome("this is palindrome test"))
