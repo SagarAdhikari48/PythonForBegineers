@@ -85,4 +85,19 @@ def find_second_largest_unique_number_in_aray(numbers):
     return unique_numbers[-2]
 
 
-print("Second largest is : ", find_second_largest_unique_number_in_aray([20, 10, 50, 90, 130]))
+# print("Second largest is : ", find_second_largest_unique_number_in_aray([20, 10, 50, 90, 130]))
+
+
+
+def find_second_largest(arr):
+    second_largest = float('inf')
+    largest = float('-inf')
+    
+    for num in  arr:
+        if(num > largest):
+            second_largest = largest
+            largest = num
+        elif num > second_largest and num != largest:
+            second_largest = num
+    return second_largest        
+print("Second larges using loop : ",find_second_largest([10, 5, 20, 8, 15]))
