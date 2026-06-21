@@ -40,4 +40,17 @@ def calculate_count_in_string(value, target):
         if char == target:
             count += 1
     return count
-print(calculate_count_in_string("hello", "l"))
+
+
+# print(calculate_count_in_string("hello", "l"))
+
+
+# Challenge #9: Remove Duplicates from Array
+# [1, 2, 2, 3, 4, 4, 5]
+
+
+def remove_duplicates(numbers):
+    return list(set(numbers))
+
+
+print(remove_duplicates([1, 2, 2, 3, 4, 4, 5]))
