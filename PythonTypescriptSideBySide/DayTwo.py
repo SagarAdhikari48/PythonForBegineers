@@ -53,4 +53,25 @@ def remove_duplicates(numbers):
     return list(set(numbers))
 
 
-print(remove_duplicates([1, 2, 2, 3, 4, 4, 5]))
+# print(remove_duplicates([1, 2, 2, 3, 4, 4, 5]))
+
+# ORED
+
+
+def remove_duplicate(arr):
+    result = []
+
+    for item in arr:
+        exist = False
+
+        for unique_item in result:
+            if unique_item == item:
+                exist = True
+                break
+        if not exist:
+            result.append(item)
+
+    return result
+
+
+print(remove_duplicate([1, 2, 2, 3, 4, 4, 5]))
