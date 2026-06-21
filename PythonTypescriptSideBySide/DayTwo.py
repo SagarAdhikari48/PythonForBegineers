@@ -6,7 +6,7 @@ def sum_of_array(array):
     sum = 0
     for i in range(0, len(array)):
         sum += array[i]
-    print(sum)
+    # print(sum)
 
 
 sum_of_array([10, 20, 30, 40])
@@ -25,4 +25,19 @@ def find_average_in_array(arr):
     print("average is: ", average)
 
 
-find_average_in_array([10, 20, 30, 40, 50])
+# find_average_in_array([10, 20, 30, 40, 50])
+
+
+# Challenge #8: Count Occurrences of a Character
+# hello
+# l - 2
+
+
+def calculate_count_in_string(value, target):
+    count = 0
+
+    for char in value:
+        if char == target:
+            count += 1
+    return count
+print(calculate_count_in_string("hello", "l"))
