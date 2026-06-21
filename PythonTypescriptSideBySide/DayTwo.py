@@ -22,7 +22,7 @@ def find_average_in_array(arr):
     for i in range(0, len(arr)):
         sum += arr[i]
         average = sum / len(arr)
-    print("average is: ", average)
+    # print("average is: ", average)
 
 
 # find_average_in_array([10, 20, 30, 40, 50])
@@ -74,4 +74,15 @@ def remove_duplicate(arr):
     return result
 
 
-print(remove_duplicate([1, 2, 2, 3, 4, 4, 5]))
+# print(remove_duplicate([1, 2, 2, 3, 4, 4, 5]))
+
+# Challenge #10: Find Second Largest Number
+# [10, 50, 30, 90, 80]
+
+
+def find_second_largest_unique_number_in_aray(numbers):
+    unique_numbers = sorted(set(numbers))
+    return unique_numbers[-2]
+
+
+print("Second largest is : ", find_second_largest_unique_number_in_aray([20, 10, 50, 90, 130]))
